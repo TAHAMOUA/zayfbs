@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZayFBS - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contact-page-bg">
+
+     <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <div class="cart-header-title">
+                <span class="cart-header-icon">🛒</span>
+                <h3>Cart</h3>
+            </div>
+            <button class="cart-close" onclick="closeCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total">
+                Total: <strong id="cartTotal">0 DH</strong>
+            </div>
+            <button class="btn-submit" style="width:100%">Commander</button>
+        </div>
+    </div>
+
+    <!-- HEADER avec image background -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="image/logo.png" alt="ZayFBS">
+            </div>
+            <ul class="nav-links">
+                <li><a href="Accueil.html">Accueil</a></li>
+                <li><a href="produit.html">Produits</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="cart-icon">
+                <span class="cart-badge">0</span>
+                <img src="image/cart.png" alt="Panier">
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="contact-main">
+        <div class="contact-wrapper">
+
+            <!-- LEFT: Formulaire -->
+            <div class="contact-form-side">
+                <h2 class="contact-title">Prenez Contact Avec Nous</h2>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6"></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">Envoyer</button>
+                        <button type="reset" class="btn-reset">Renitialiser</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- RIGHT: Image -->
+            <div class="contact-image-side">
+                <img src="image/contact-olive.png" alt="Huile d'Olive Zay">
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>ZayFBS-region de Fquih ben saleh-Maroc | Contact:contact@zayfbs.ma | Copyright 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
