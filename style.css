@@ -1,4 +1,4 @@
-/* ===== ROOT VARIABLES ===== */
+/*  ROOT VARIABLES  */
 :root {
     --primary-green: #2e6b12;
     --light-green: #a8c68f;
@@ -6,7 +6,7 @@
     --text-dark: #333;
 }
 
-/* ===== RESET & BASE ===== */
+/*  RESET & BASE  */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
     color: var(--text-dark);
 }
 
-/* ===== NAVBAR ===== */
+/*  NAVBAR  */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -102,7 +102,7 @@ body {
     justify-content: center;
     font-weight: bold;
 }
-/* ===== CART SIDEBAR ===== */
+/*  CART SIDEBAR  */
 .cart-overlay {
     display: none;
     position: fixed;
@@ -291,9 +291,9 @@ body {
 }
 
 
-/* ================================================
+/* 
    LANDING PAGE (Accueil.html)
-   ================================================ */
+    */
 
 .hero {
     height: 100vh;
@@ -427,9 +427,9 @@ h2 {
     border-radius: 10px;
 }
 
-/* ================================================
+/* 
    PRODUITS PAGE (produit.html)
-   ================================================ */
+    */
 
 .product-page-bg {
     background-color: var(--light-green);
@@ -545,7 +545,7 @@ h2 {
     background-color: var(--primary-green);
 }
 
-/* ===== MODAL ===== */
+/*  MODAL  */
 .modal-overlay {
     display: none;
     position: fixed;
@@ -682,9 +682,9 @@ h2 {
 
 .btn-annuler:hover { background-color: #1b4a0a; }
 
-/* ================================================
+/*
    CONTACT PAGE (contact.html)
-   ================================================ */
+*/
 
 .contact-page-bg {
     background-color: var(--light-green);
@@ -800,7 +800,7 @@ h2 {
     max-width: 380px;
     object-fit: contain;
 }
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 footer {
     background-color: var(--primary-green);
     color: white;
@@ -830,9 +830,9 @@ footer {
         right: -100%;
     }
 }
-/* ================================================
+/* 
    RESPONSIVE
-   ================================================ */
+    */
 
 @media (max-width: 768px) {
     .product-grid {

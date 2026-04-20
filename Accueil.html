@@ -3,32 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>images | L'huile d'olive 100% naturelle</title>
+    <title>ZayFBS | L'huile d'olive 100% naturelle</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- CART OVERLAY + SIDEBAR — داخل body ✅ -->
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <div class="cart-header-title">
+                <span class="cart-header-icon">🛒</span>
+                <h3>Cart</h3>
+            </div>
+            <button class="cart-close" onclick="closeCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total">
+                Total: <strong id="cartTotal">0 DH</strong>
+            </div>
+            <button class="btn-submit" style="width:100%">Commander</button>
+        </div>
+    </div>
+
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="images/logo.png" alt="images Logo">
+                <img src="image/logo.png" alt="ZayFBS Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="Accueil.html" class="active">Accueil</a></li>
                 <li><a href="#ferms">Ferms</a></li>
-                <li><a href="#process">process</a></li>
+                <li><a href="#process">Process</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#">Produits</a></li>
+                <li><a href="produit.html">Produits</a></li>
             </ul>
-            <div class="cart-icon">
-                <img src="images/cart.png" alt="Cart">
+            <!-- onclick مباشرة بلا <a> ✅ -->
+            <div class="cart-icon" onclick="openCart()">
+                <span class="cart-badge">0</span>
+                <img src="image/cart.png" alt="Cart">
             </div>
         </nav>
     </header>
 
     <section class="hero">
         <div class="hero-content">
-            <img src="logo-small.png" alt="images" class="hero-logo">
+            <img src="image/logo.png" alt="ZayFBS" class="hero-logo">
             <h1>L'huile d'olive 100% naturelle de FBS</h1>
             <p>Pure olive oil. Rich taste, natural goodness.</p>
             <a href="produit.html" class="btn">Découvrir Nos Produits</a>
@@ -39,14 +61,11 @@
         <h2>Nos Fermes Locales</h2>
         <div class="card-container">
             <div class="card">
-                <div class="img-placeholder">
-                    
-                </div>
+                <div class="img-placeholder"></div>
                 <p>Notre Terroir</p>
             </div>
             <div class="card">
                 <div class="img-placeholder"></div>
-
                 <p>Récolte Manuelle</p>
             </div>
             <div class="card">
@@ -60,23 +79,23 @@
         <h2>Savoir-Faire</h2>
         <div class="process-steps">
             <div class="step">
-                <div class="icon"><img src="images/output-onlinegiftools (1).gif" alt=""></div>
+                <div class="icon"><img src="image/output-onlinegiftools (1).gif" alt=""></div>
                 <p>1. Récolte</p>
             </div>
             <div class="step">
-                <div class="icon"><img src="images/output-onlinegiftools (2).gif" alt=""></div>
+                <div class="icon"><img src="image/output-onlinegiftools (2).gif" alt=""></div>
                 <p>2. Sélection</p>
             </div>
             <div class="step">
-                <div class="icon"><img src="images/output-onlinegiftools (3).gif" alt=""></div>
+                <div class="icon"><img src="image/output-onlinegiftools (3).gif" alt=""></div>
                 <p>3. Extraction</p>
             </div>
             <div class="step">
-                <div class="icon"><img src="images/output-onlinegiftools (4).gif" alt=""></div>
+                <div class="icon"><img src="image/output-onlinegiftools (4).gif" alt=""></div>
                 <p>4. Mise en bouteille</p>
             </div>
             <div class="step">
-                <div class="icon"><img src="images/embouteillage.gif" alt=""></div>
+                <div class="icon"><img src="image/embouteillage.gif" alt=""></div>
                 <p>5. Distribution</p>
             </div>
         </div>
@@ -86,24 +105,25 @@
         <h2>Nos Certifications</h2>
         <div class="cert-icons">
             <div class="cert">
-                <img src="bio-badge.png" alt="100% Bio">
+                <div class="icon"><img src="image/bio-badge.png" alt="100% Bio"></div>
                 <span>bio</span>
             </div>
             <div class="cert">
-                <img src="bio-badge.png" alt="100% Bio">
+                <div class="icon"><img src="image/bio-badge.png" alt="100% Bio"></div>
                 <span>bio</span>
             </div>
             <div class="cert">
-                <img src="bio-badge.png" alt="100% Bio">
+                <div class="icon"><img src="image/bio-badge.png" alt="100% Bio"></div>
                 <span>bio</span>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>images - Région de Fquih ben Saleh, Maroc | Contact: contact@images.ma | Copyright 2026</p>
+        <p>ZayFBS - Région de Fquih ben Saleh, Maroc | Contact: contact@zayfbs.ma | Copyright 2026</p>
     </footer>
 
+    
     <script src="script.js"></script>
 </body>
 </html>
