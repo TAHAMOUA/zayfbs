@@ -8,25 +8,7 @@
 </head>
 <body class="contact-page-bg">
 
-     <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
-
-    <div class="cart-sidebar" id="cartSidebar">
-        <div class="cart-header">
-            <div class="cart-header-title">
-                <span class="cart-header-icon">🛒</span>
-                <h3>Cart</h3>
-            </div>
-            <button class="cart-close" onclick="closeCart()">✕</button>
-        </div>
-        <div class="cart-items" id="cartItems"></div>
-        <div class="cart-footer" id="cartFooter">
-            <div class="cart-total">
-                Total: <strong id="cartTotal">0 DH</strong>
-            </div>
-            <button class="btn-submit" style="width:100%">Commander</button>
-        </div>
-    </div>
-
+     
     <!-- HEADER avec image background -->
     <header>
         <nav class="navbar">
@@ -83,8 +65,26 @@
 
         </div>
     </main>
+<!-- cart -->
+     <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
 
-    <!-- FOOTER -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <div class="cart-header-title">
+                <span class="cart-header-icon">🛒</span>
+                <h3>Cart</h3>
+            </div>
+            <button class="cart-close" onclick="closeCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total">
+                Total: <strong id="cartTotal">0 DH</strong>
+            </div>
+            <button class="btn-submit" style="width:100%">Commander</button>
+        </div>
+    </div>
+    <!-- footer -->
     <footer>
         <p>ZayFBS-region de Fquih ben saleh-Maroc | Contact:contact@zayfbs.ma | Copyright 2026</p>
     </footer>
