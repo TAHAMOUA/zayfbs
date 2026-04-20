@@ -696,6 +696,7 @@ h2 {
 .contact-main {
     flex: 1;
     padding: 130px 5% 50px;
+    margin-top: 6%;
 }
 
 .contact-wrapper {
