@@ -292,7 +292,7 @@ body {
 
 
 /* 
-   Acceul PAGE 
+   LANDING PAGE (Accueil.html)
     */
 
 .hero {
@@ -349,8 +349,9 @@ h2 {
 
 .card-container {
     display: flex;
-    justify-content: center;
-    gap: 300px;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -358,11 +359,27 @@ h2 {
     padding: 15px;
     border-radius: 10px;
     border: 1px solid #333;
-    width: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.card img{
+    display: flex;
+    width:50px;
+    height:100px;
+    border: #222 solid;
+}
+
+.card h1{
+    font-size: 15px;
 }
 
 .img-placeholder {
-    height: 150px;
+    height: 170px;
+    width: 100%;
     background: url('image/hero.jpg') center/cover;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -418,6 +435,7 @@ h2 {
 .cert-icons {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .cert .icon img {
@@ -428,7 +446,7 @@ h2 {
 }
 
 /* 
-   PRODUITS PAGE 
+   PRODUITS PAGE (produit.html)
     */
 
 .product-page-bg {
@@ -683,7 +701,7 @@ h2 {
 .btn-annuler:hover { background-color: #1b4a0a; }
 
 /*
-   CONTACT PAGE 
+   CONTACT PAGE (contact.html)
 */
 
 .contact-page-bg {
@@ -855,12 +873,7 @@ footer {
         padding: 6px 10px;
     }
 
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
+ 
     .process-steps {
         gap: 30px;
     }
