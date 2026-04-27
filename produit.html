@@ -50,7 +50,7 @@
         <h2 class="section-title">Nos Huiles d’Olive</h2>
         
         <div class="admin-bar">
-            <button class="btn-primary btn-large">Ajouter au produit</button>
+            <button  class="btn-primary">Ajouter au produit</button>
         </div>
         <div class="product-grid" id="product-card">
           
@@ -58,6 +58,39 @@
 
 
     </main>
+
+
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+
+<div class="modal" id="productModal">
+    <div class="modal-header">
+        <h3>Ajouter un Nouveau Produit</h3>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <label>Description / Nom du produit</label>
+            <textarea id="newDesc" placeholder="Ex: Huile d'Olive Extra Vierge 1L"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Prix (DH)</label>
+            <div class="input-icon">
+                <input type="number" id="newPrice" placeholder="0.00">
+                <span class="input-icon-symbol">DH</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Lien de l'image (URL)</label>
+            <input type="file" id="newImage" placeholder="image/nom-image.png">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn-annuler" onclick="closeModal()">Annuler</button>
+        <button class="btn-ajouter" onclick="submitNewProduct()">Ajouter</button>
+    </div>
+</div>
+
+
 
     <footer class="footer">
         <p>ZayFBS-region de Fquih ben saleh-Maroc | Contact:contact@zayfbs.ma | Copyright 2026</p>
